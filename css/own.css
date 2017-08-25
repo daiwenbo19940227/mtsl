@@ -1,0 +1,741 @@
+/*预约样式*/
+body
+{
+	background-color: white;
+}
+#appointmentbg
+{
+	background-color: white;
+}
+#appointmenthead
+{
+	background-image: url(../img/appointment/appointmenthead.png);
+	padding-bottom: 59%;
+	
+}
+.imgtitle
+{
+	color: #5d5d5d;
+	font-size: 0.8rem;
+	margin-top: 65px;
+	text-shadow: none;
+	font-weight: 600;
+	font-family: hkww;
+}
+@font-face {
+	font-family:hkww;
+	src: url(../font/hkww.ttc);
+}
+
+.hkww
+{
+	font-family: hkww;
+}
+
+.teladdress
+{
+	text-align: center;
+	color: #5d5d5d;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.bottom
+{
+	border-bottom:1px solid #d6d5da;
+	padding: 5px !important;
+}
+.appointmentfont
+{
+	width: 140px;
+	font-size: 1rem;
+	color: black;
+}
+.appointmentselect
+{
+	font-size: 1.2rem;
+	padding-left: 35px !important;
+	color: black;
+}
+
+.appointmentbtn
+{
+	margin-top: 0.6em;
+}
+
+.weui_btn_primary
+{
+	background-color: #ef2c80;
+}
+
+.appointmentfoot
+{
+	font-size: 12px;
+}
+
+.imgname
+{
+	padding: 5px 5px 0px 0px;
+}
+
+.imgappointment
+{
+	margin-top: 5px;
+}
+.appointment_wecell
+{
+	padding: 0px 15px !important;
+}
+.appointmenttel
+{
+	color: #5d5d5d;
+	font-size: 16px;
+
+}
+/*聊天列表页面*/
+.background
+{
+	background-color: #f5f5f5;
+}
+.marginnone
+{
+	margin-top: 0px !important;
+}
+.serviceheadimg
+{
+	width: 80px;
+	height: 80px;
+	margin-right:5px;
+	display:block;
+	border-radius: 10%;
+}
+.servicesmarginleft
+{
+	margin-left: 10px ;
+}
+.servicesfoot
+{
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1.3rem;
+	margin: 0 0 0 0;
+	background-color: white;
+	color: #959595;
+}
+.servicesbottom
+{
+	bottom: 0em;
+}
+.servicesfootimg img
+{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	position: relative;
+	top: 5px;
+}
+
+/*官网*/
+/*第一页*/
+.firstpage
+{
+	height: 100% !important;
+	background-image: url(../img/website/firstpage.jpg);
+	background-size: cover;
+} 
+
+/*第二页*/
+.secondpagebg
+{
+	background-image: url(../img/website/pg2.png);
+	background-size: cover;
+}
+.secondpagebg3
+{
+	background-image: url(../img/website/bg23.png);
+	background-size: cover;
+}
+.secondpgarctile
+{
+	width: 60%;
+	margin: 0 auto;
+	/*text-indent: 1rem;*/
+	font-family: "微软雅黑";
+	position: relative;
+	padding-top: 45%;
+}
+.secondtext
+{
+	width: 85%;
+}
+.thirdtext
+{
+	width: 70%;
+}
+.fontweight
+{
+	font-weight: 600;
+}
+.secondpagebg2
+{
+	background-image: url(../img/website/bg22.png);
+	background-size:cover;
+}
+.fontsize
+{
+	font-size: 14px;
+	text-align: center;
+}
+/*第三页*/
+.thirdpagebg
+{
+	background-image: url(../img/website/thirdpagebg.png);
+	background-size: cover;
+}
+
+.thirdpgimg
+{
+	width: 100%;
+	max-width: 630px;
+	max-height: 380px;
+	margin-top: 50px;
+}
+.thirdmargintop
+{
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.thirdmargintop2
+{
+	margin: 0 auto;
+	margin-top: 10%;
+}
+/*第四页*/
+.fourthpagepg
+{
+	background-image: url(../img/website/fourbg.jpg);
+	background-size: cover;
+}
+
+.fourthimg
+{
+	width: 46%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 4%;
+	
+}
+.fourthmargintop
+{
+	margin-top: 40%;
+}
+/*第五页*/
+.fifthpage
+{
+	background-image: url(../img/website/fifthpagebg.png);
+	background-size:  cover;
+	
+}
+.fifthimg1
+{
+	width: 40%;
+	height: 24.8%;
+	border-radius: 50%;
+	position: absolute;
+	top: 3%;
+	left: 46%;
+	background-image: url(../img/website/WechatIMG316.jpeg);
+	background-size: cover;
+}
+.fifthimg2
+{
+	width: 35%;
+	height: 21.7%;
+	border-radius: 50%;
+	position: absolute;
+	top: 17%;
+	left: 1%;
+	background-image: url(../img/website/WechatIMG315.jpeg);
+	background-size: cover;
+}
+.fifthimg3
+{
+	width: 32%;
+	height: 19.9%;
+	border-radius: 50%;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	background-image: url(../img/website/WechatIMG314.jpeg);
+	background-size: cover;
+}
+.fifthimg4
+{
+	width: 32%;
+	height: 19.9%;
+	border-radius: 50%;
+	position: absolute;
+	top: 52%;
+	left: 67%;
+	background-image: url(../img/website/WechatIMG313.jpeg);
+	background-size: cover;
+}
+
+.fifthimg5
+{
+	width: 30%;
+	height: 18.6%;
+	border-radius: 50%;
+	position: absolute;
+	top: 65%;
+	left: 25%;
+	background-image: url(../img/website/WechatIMG312.jpeg);
+	background-size: cover;
+}
+/*第六页*/
+.sixthpagebg
+{
+	background-image: url(../img/website/sixthpagebg.png);
+	background-size: cover;
+}
+.sixthnull
+{
+	width: 100%;
+	height: 5%;
+}
+.sixpageleft1
+{
+	text-align: center;
+	font-weight: 600;
+	color: white;
+	padding: 0px 10px 0px 10px !important;
+}
+.sixpageleft1left
+{
+	background-color: #fd5f54;
+	margin-top: 35%;
+	height: 150px;
+}
+.sixpageleft1right
+{
+	background-image: url(../img/website/sixthimg1.png);
+	margin-top: 35%;
+	height: 150px;
+	background-size: cover;
+}
+.sixpageleft1rightcover
+{
+	width: 100%;
+	height: 100%;
+	background-color: #f9b26d;
+	background: rgba(249,178,109,.5);
+}
+.sixmargintop
+{
+	position: relative;
+	top: 15%;
+}
+.sixpageleft2
+{
+	text-align: center;
+	font-weight: 600;
+	color: white;
+	padding: 0px 10px 0px 10px !important;
+}
+.sixpageleft2left
+{
+	background-image: url(../img/website/sixthimg2.png);
+	height: 150px;
+	background-size: cover;
+}
+.sixpageleft2leftcover
+{
+	width: 100%;
+	height: 100%;
+	background-color: #f9b26d;
+	background: rgba(169,190,249,.5);
+}
+.sixpageleft2right
+{
+	background-color: #f9e67d;
+	height: 150px;
+}
+.sixpageleft3
+{
+	text-align: center;
+	font-weight: 600;
+	padding: 0px 10px 0px 10px !important;
+	color: white;
+}
+
+.sixpageleft3left
+{
+	background-color: #7ee3a9;
+	height: 150px;
+}
+.sixpageleft3right
+{
+	background-image: url(../img/website/sixthimg3.png);
+	height: 150px;
+	background-size: cover;
+}
+.sixpageleft3rightcover
+{
+	width: 100%;
+	height: 100%;
+	background-color: #f9b26d;
+	background: rgba(250,212,175,.5);
+}
+.course
+{
+	background-image: url(../img/website/course.jpg);
+	background-size: cover;
+}
+/*第七页*/
+.seventhpagebg
+{
+	background-image: url(../img/website/seventhpagebg.png);
+	background-size: cover;
+}
+
+.seventhtext1
+{
+	width: 80%;
+	margin: 0 auto;
+	padding: 8px !important;
+}
+.seventhtext1top
+{
+	margin-top: 80%;
+}
+.seventhtext1height
+{
+	height: 1.4em;
+	line-height: 1.4em;
+	border: 2px solid #fe5f55;
+	border-radius: 5px;
+	background-color: transparent;
+	
+}
+.seventhtext1height input::-webkit-input-placeholder
+{
+	
+	color: #666666;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 550;
+	letter-spacing: 2px;
+}
+.seventhbtn
+{
+	width: 100%;
+	height: 100%;
+}
+.seventhdate
+{
+	letter-spacing: 2px;
+	font-family: "微软雅黑";
+	font-weight: 550;
+	font-size: 18px;
+	color: #666666;
+}
+/*第八页*/
+.eightpagebg
+{
+	background-image: url(../img/website/bg8.png);
+	background-size: cover;
+}
+.eighthimg
+{
+	width: 60%;
+	margin-left: 19%;
+	margin-top: 13%;
+}
+.eightimgbox
+{
+	display: block;
+	max-width: 80%;
+	background-color: #fd5f54;
+	padding: 10px;
+	border-radius: 5px;
+}
+/*未绑定页面*/
+.unbooundNull
+{
+	width: 100%;
+	height: 10%;
+}
+.bodybg
+{
+	background-image: url(../img/unbund/bodybg.png);
+	background-size: 100% 100%;
+}
+#unbundhead
+{
+	background-image: url(../img/unbund/unbundhead.png);
+}
+.unbundborder
+{
+	width: 90%;
+	margin: 0 auto;
+	height: 30px;
+}
+.unbundfont
+{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #666666;
+	margin-left: 15px;
+}
+.unbundlable
+{
+	width: 150px;
+}
+.unboundimg img
+{
+	width:15px;
+	height: 20px;
+	padding: 5px 5px 0px 0px;
+}
+.bordertlr
+{
+	border: 1px solid #d6d5da;
+	border-bottom: none;
+}
+.bordertblr
+{
+	border: 1px solid #d6d5da;
+}
+.unboundselect img
+{
+	width: 20px;
+	height: 20px;
+	padding: 0;
+}
+.unboundbtn
+{
+	background-color: #ef2c80;
+	margin-top: 15%;
+	color: white;
+	letter-spacing: 2px;
+}
+/*菜单css*/
+.menubody
+{
+	background-color: #f5f5f5;
+}
+#menuhead
+{
+	background-image: url(../img/meun/meunhead.png);
+	padding-bottom: 53%;
+}
+
+.weui_tabbar_icon img
+{
+	width: 25px;
+	height: 25px;
+}
+.menuicon
+{
+	width: 40px;
+	height: 40px;
+}
+.menuicon img
+{
+	width: 100%;
+	height: 100%;	
+}
+.menumessage
+{
+	width: 100%;
+	background-color: white;
+	padding: 0px !important;
+	margin-top: 4%;
+}
+.menufont
+{
+	color: #4d4d4d;
+	margin-left: 2%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+.menufunction
+{
+	padding:0 0 0 0 !important;
+}
+.menufunction img
+{
+	width: 100%;
+	height: 100%;
+}
+.menumarginleft
+{
+	margin-top: 5%;
+	padding: 0px 5px 0px 10px !important;
+}
+.menumarginright
+{
+	margin-top: 5%;
+	padding: 0px 10px 0px 5px !important;
+}
+.menufunction2
+{
+	width: 50%;
+	padding:0 0 0 0 !important;
+}
+.menufunction2 img
+{
+	width: 100%;
+	height: 100%;
+}
+.menumargin2left
+{
+	padding: 5px 5px 0px 10px !important;
+}
+/*每周食谱*/
+/*.recipenull
+{
+	width: 100%;
+	height: 30px;
+	background-color: #f1f1f1;
+}*/
+.recipeitem
+{
+	background-color: #FFFFFF;
+}
+.recipeli
+{
+	background-color: #f1f1f1 !important;
+	margin: 0 0 0 0 !important;
+}
+.recipeweek
+{
+	width: 20%;
+	font-weight: 600;
+	color: #666666;
+	float: left;
+}
+.recipedate
+{
+	width: 80%;
+	color: #666666;
+	margin-left:15%;
+	
+}
+.recipedetail
+{
+	width: 95%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.js-show
+{
+	background-color: #f1e8d7 !important;
+}
+.recipetime
+{
+	width: 40%;
+	font-weight: 600;
+	color: #f02c80;
+	float: left;
+}
+.food
+{
+	color: #666666;
+}
+.recipeTeacher
+{
+	width: 100%;
+	height: 90px;
+	background-color: #fffdf0;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.recipeTeacher ul li
+{
+	background-color:#fffdf0 ;
+	margin: 0 0 0 0;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 5px;
+	color:#666666 ;
+}
+.recipeTeacher ul li span
+{
+	font-weight: 600;
+}
+/*学生资料*/
+.studebtinfobody
+{
+	background-color: #f1f1f1;
+}
+#studentinfoimg
+{
+	background-image: url(../img/studentinfo/studentinfohead.png);
+	padding-bottom: 54%;
+}
+.studentinfobg
+{
+	padding: 0 0 0 0 !important;
+}
+.studentinfotitle
+{
+	font-size: 3rem;
+	margin-top: 15%;
+}
+.colorred
+{
+	color: #f02c80;
+	letter-spacing: 5px;
+}
+.studentinfohead
+{
+	width: 23%;
+	height: 42.5%;
+	position: absolute;
+	left:39%;
+	top: 16%;
+	background-color: #000000;
+	border-radius: 50%;
+	z-index: 999;
+	background-image: url(../img/services/head.png);
+	background-size: cover;
+}
+.studentinfofoot
+{
+	font-size: 2rem;
+	color: black;
+}
+.studentinfo
+{
+	width:96% ;
+	margin: 0 auto;
+	font-size: 3rem;
+	background-color: white;
+	margin-top: 5%;
+	height: 110px;
+	line-height: 110px;
+	border: 1px solid #5D5D5D;
+	border-bottom: none;
+}
+.studentinfomargin
+{
+	margin-top: 0%;
+}
+.studentborderbottom
+{
+	border: 1px solid #5D5D5D;
+}
+.infoleft
+{
+	width: 25%;
+	float: left;
+	margin-left: 2%;
+	color: #747474;
+}
+.inforight
+{
+	font-weight: 600;
+	color: #666666;
+}

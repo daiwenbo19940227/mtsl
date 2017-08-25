@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>每周食谱</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="../css/weui2.css" />
+		<link rel="stylesheet" href="../css/weui3.css" />
+		<link rel="stylesheet" type="text/css" href="../css/own.css" />
+		<script src="../js/zepto.min.js"></script>
+		<script>
+			$(function() {
+				$('.js-category').click(function() {
+					$parent = $(this).parent('li');
+					if($parent.hasClass('js-show')) {
+						$parent.removeClass('js-show');
+						$(".recipeitem").css({"background-color":"#FFFFFF"});
+						$(this).children('i').removeClass('icon-35').addClass('icon-74');
+					} else {
+						$parent.siblings().removeClass('js-show');
+						$parent.addClass('js-show');
+						$(".recipeitem").css({"background-color":"#f1e8d7","opacity": "1 !important"})
+						$(this).children('i').removeClass('icon-74').addClass('icon-35');
+						$parent.siblings().find('i').removeClass('icon-35').addClass('icon-74');
+					}
+				});
+
+			});
+		</script>
+	</head>
+
+	<body ontouchstart style="background-color: #f1f1f1;">
+		<div class="page-bd " style="background-color: #f1f1f1;"> 
+			<ul>
+				<li class="recipeli">
+					<div class="recipenull"></div>
+					<div class="weui-flex js-category recipeitem weui-border-t">
+						<p class="weui-flex-item">
+							<span class="recipeweek">星期一</span>
+							<span class="recipedate">2017年6月14日</span>
+						</p>
+						<i class="icon icon-74"></i>
+					</div>
+					<div class="page-category js-categoryInner recipedetail">
+
+						<div class="weui_cells weui_cells_access" style="margin-top: 0px; background-color: #f1e8d7;">
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="recipeTeacher">
+										<ul>
+											<li><span>保健医生：</span>代医生</li>
+											<li>营养丰富、均衡、达到配餐的目的和效果</li>
+											<li><span>当前时间：</span>2017年6月14日</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">早餐（7:00）</span>
+									<span class="food">牛肉烧菜粥、芙蓉包</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">加餐一（10:00）</span>
+									<span class="food">梨子</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">午餐（12:00）</span>
+									<span class="food">葱油花卷、冬瓜排骨汤</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">加餐2（15:00）</span>
+									<span class="food">香蕉</span>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">晚餐（7:00）</span>
+									<span class="food">红豆片、香菇土豆片</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="recipeli">
+					<div class="recipenull"></div>
+					<div class="weui-flex js-category recipeitem weui-border-t">
+						<p class="weui-flex-item">
+							<span class="recipeweek">星期一</span>
+							<span class="recipedate">2017年6月14日</span>
+						</p>
+						<i class="icon icon-74"></i>
+					</div>
+					<div class="page-category js-categoryInner recipedetail">
+
+						<div class="weui_cells weui_cells_access" style="margin-top: 0px; background-color: #f1e8d7;">
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="recipeTeacher">
+										<ul>
+											<li><span>保健医生：</span>代医生</li>
+											<li>营养丰富、均衡、达到配餐的目的和效果</li>
+											<li><span>当前时间：</span>2017年6月14日</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">早餐（7:00）</span>
+									<span class="food">牛肉烧菜粥、芙蓉包</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">加餐一（10:00）</span>
+									<span class="food">梨子</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">午餐（12:00）</span>
+									<span class="food">葱油花卷、冬瓜排骨汤</span>
+									</div>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">加餐2（15:00）</span>
+									<span class="food">香蕉</span>
+								</div>
+							</a>
+							<a class="weui_cell" href="javascript:;">
+								<div class="weui_cell_bd weui_cell_primary">
+									<span class="recipetime">晚餐（7:00）</span>
+									<span class="food">红豆片、香菇土豆片</span>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			function selectmenu(n) {
+				var eleMore = document.getElementById("menu_" + n);
+				if(eleMore.style.display == "none") {
+					eleMore.style.display = 'block';
+					$("#cell_" + n).removeClass("icon-74");
+					$("#cell_" + n).addClass("icon-35 ");
+				} else {
+					eleMore.style.display = 'none';
+					$("#cell_" + n).removeClass("icon-35");
+					$("#cell_" + n).addClass("icon-74");
+				}
+			}
+		</script>
+	</body>
+
+</html>

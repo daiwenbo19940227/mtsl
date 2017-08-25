@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主菜单</title>
+	</head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="../css/weui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/weui2.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/weui3.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/own.css"/>
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/iscroll.js"></script>
+    <script>
+    	 $(function(){
+    	 	$('.weui_tab').tab({
+    			defaultIndex: 0,
+   	 			onToggle:function(index){
+   				if(index>0){
+   	 				alert(index)
+    			}
+    		}
+			});
+    	 });
+    </script>
+	<body class="menubody">
+		<div class="page-bd">
+			<div class="weui-img-box">
+				<div class="weui-img" id="menuhead"></div>
+			</div>
+			<div class="weui-flex menumessage">
+				<div class="weui-flex-item ">
+					<div class="weui_cell">
+                			<div class="weui_cell_hd menuicon"><img src="../img/meun/menuicon.png" /></div>
+               				<div class="weui_cell_bd weui_cell_primary weui-border-l menufont">
+               					little hands 微信公众平台全新上线啦！
+               				</div>
+            			</div>
+				</div>
+				
+			</div>
+			<div class="weui-flex menufunction">
+    			<div class="weui-flex-item menumarginleft">
+    				<img src="../img/meun/function1.png"/>
+    			</div>
+    			<div class="weui-flex-item  menumarginright">
+    				<img src="../img/meun/function2.png"/>
+    			</div>	
+    		</div>
+    		<div class="weui-flex menufunction2">
+    			<div class="weui-flex-item menumargin2left">
+    				<img src="../img/meun/function3.png"/>
+    			</div>
+    		</div>
+			<div class="weui_tab tab-bottom" >
+				<div class="weui_tabbar ">
+	                <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+	                    <div class="weui_tabbar_icon">
+	                        <img src="../img/icon/menuappointment.png" alt="">
+	                    </div>
+	                    <p class="weui_tabbar_label">在线预约</p>
+	                </a>
+	                <a href="javascript:;" class="weui_tabbar_item">
+	                    <div class="weui_tabbar_icon">
+	                        <img src="../img/icon/menumessage.png" alt="">
+	                    </div>
+	                    <p class="weui_tabbar_label">在线客服</p>
+	                </a>
+	                <a href="javascript:;" class="weui_tabbar_item">
+	                    <div class="weui_tabbar_icon">
+	                        <img src="../img/icon/net.png" alt="">
+	                    </div>
+	                    <p class="weui_tabbar_label">官方网站</p>
+	                </a>
+	                <a href="javascript:;" class="weui_tabbar_item">
+	                    <div class="weui_tabbar_icon">
+	                        <img src="../img/icon/menusystem.png" alt="">
+	                    </div>
+	                    <p class="weui_tabbar_label">我的信息</p>
+	                </a>
+	            </div>
+		</div>
+		</div>	
+	</body>
+</html>

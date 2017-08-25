@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>微官网</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="../css/weui.css"/>
+  <link rel="stylesheet" href="../css/weui2.css"/>
+  <link rel="stylesheet" href="../css/weui3.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/own.css"/>
+  <script src="../js/zepto.min.js"></script>
+  <script src="../js/fullpage.js"></script>
+ <style>
+   .page-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+.page:first-child {
+    background-color: #7B68EE;
+}
+
+.page:nth-child(2) {
+    background-color: #00BFFF;
+}
+
+.page:nth-child(3) {
+    background-color: #ff8c81;
+}
+
+.page:last-child {
+    background-color: #40E0D0;
+}
+
+
+
+.arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 33px;
+    height: 18px;
+    margin-left: -16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAkBAMAAADP1/GcAAAAIVBMVEUAAAD////////////////////////////////////////PIev5AAAACnRSTlMA7THqZCykIw4N2Qp8/wAAAKJJREFUOMuF0yEOwkAQheEJhmArUUu4ARIFFgUSh+YUOM7R4PaU0FS8hD/5O6KdmX37ua2/2txrofaf5oHVtg+e2PU+NifGcx+cGH6hpkSbUkrMMSPmnBJAQAiSgyAkkhUiYSGSJiFIdskbQYQbIlnwSmbcwUgEkyAZgKAnktaQdERAEAEBJD9BQAC5TR9BrvWcCEEedTnoUz+eav0qq3ct1xewUzlrRHoptQAAAABJRU5ErkJggg==) no-repeat;
+    background-size: 33px auto;
+    opacity: 0;
+}
+
+.arrow-h{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 33px;
+    height: 18px;
+    margin-top: -9px;
+    opacity: 0;
+}
+
+.arrow-h i{
+    display: block;
+    width: 33px;
+    height: 18px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAkBAMAAADP1/GcAAAAIVBMVEUAAAD////////////////////////////////////////PIev5AAAACnRSTlMA7THqZCykIw4N2Qp8/wAAAKJJREFUOMuF0yEOwkAQheEJhmArUUu4ARIFFgUSh+YUOM7R4PaU0FS8hD/5O6KdmX37ua2/2txrofaf5oHVtg+e2PU+NifGcx+cGH6hpkSbUkrMMSPmnBJAQAiSgyAkkhUiYSGSJiFIdskbQYQbIlnwSmbcwUgEkyAZgKAnktaQdERAEAEBJD9BQAC5TR9BrvWcCEEedTnoUz+eav0qq3ct1xewUzlrRHoptQAAAABJRU5ErkJggg==) no-repeat;
+    background-size: 33px auto;
+    -webkit-transform: rotate(-90deg);
+}
+
+.current .arrow {
+    -webkit-animation: swipeMoveTop 1.5s 1s ease infinite;
+}
+
+.current .arrow-h {
+    -webkit-animation: swipeMoveLeft 1.5s 1s ease infinite;
+}
+
+/*上滑提示*/
+@-webkit-keyframes swipeMoveTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10px, 0);
+    }
+    70% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -10px, 0);
+    }
+}
+
+/*左滑提示*/
+@-webkit-keyframes swipeMoveLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(10px, 0, 0);
+    }
+    70% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10px, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideToTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+/*自定义*/
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    color: #000;
+    font-size: 18px;
+    opacity: 0;
+}
+
+.subtitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+    font-size: 16px;
+    opacity: 0;
+}
+        .current .title{
+            -webkit-animation: slideToTop .8s ease both;
+        }
+
+        .current .subtitle{
+            -webkit-animation: slideToTop .8s 0.3s ease both;
+        }
+</style>
+      <script>
+  $(function(){
+
+	  
+	  });    
+ 
+      </script>
+</head>
+
+<body ontouchstart>
+<div class="page-wrap">
+	<!--第一页-->
+    <div class="page firstpage">
+        <div class="arrow"></div>
+    </div>
+    <!--第二页-->
+    <div class="page secondpagebg">
+    	<div class="secondaticle">
+    		<div class="secondpgbull"></div>
+    			<div class="weui-weixin-content secondpgarctile secondtext">
+                    <p><span class="fontweight">Mike Zheng：</span>新加坡籍华裔，从事蒙特梭利幼儿教育与医疗产业多年，如今重返国内，希望将新加坡本土的蒙氏教育理念带进国内早教市场。
+<span class="fontweight">Lulu：</span>法籍华人，在法国从事八年亲子教育工作，并且游历美国、英国、加拿大等多个国家深入考察当地的蒙特梭利教育。期间开设“新游法”高端定制亲子游学模式。如今致力于将国外纯正的蒙特梭利教育带回中国。
+<span class="fontweight">Andrea：</span>国际认证的蒙特梭利教师、培训师。美国蒙特梭利研究学会教育委员会会员。曾任美国、中国等多家幼儿机构教学总监及顾问，现任上海一大型教育集团旗下国际幼儿园教学主管。
+                    </p>
+                </div><!--内容结束-->
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--第三页-->
+    <div class="page secondpagebg2">
+    	<div class="secondaticle">
+    		<div class="secondpgbull"></div>
+    			<div class="weui-weixin-content secondpgarctile thirdtext">
+                    <p>
+<span class="fontweight fontsize">Little Hands Montessori Kid's Home</span>
+集新加坡、法国、美国三国婴幼儿教育之精华，打造真正适合中国婴幼儿的早教环境。学校以蒙特梭利早教方法为指导，专注于发现每个孩子的不同。针对不同年龄段的教育敏感期，通过孩子自己的探索，使之能够发掘自己的天性和潜能。</p>
+                </div><!--内容结束-->
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--第四页-->
+    <div class="page secondpagebg3">
+    	<div class="secondaticle">
+    		<div class="secondpgbull"></div>
+    			<div class="weui-weixin-content secondpgarctile secondtext">
+                    <p><span class="fontweight">吸收性心智：</span>0-3岁无意识吸收，3-6岁有意识吸收。
+<span class="fontweight">敏感期：</span> 秩序、运动、细节、社交、感官、阅读、书写、语言、空间关系、音乐、数学。
+<span class="fontweight">混龄教育：</span>混龄班的方式符合儿童个性化的“生物钟”，年龄不再是衡量学习准备度的主要指标。无论是对大孩子还是小孩子而言，同伴合作、同伴辅导的方式都有助于增强他们的成就感和自信心。
+<span class="fontweight">体验式教学：</span>我看到了，我忘记了；我听到了，我记住了；我做过了，我理解了。
+<span class="fontweight">有准备的环境：</span>儿童来到这里所接触到一切有利于发展并最大程度促进孩子独立学习与探索的条件。
+                    </p>
+                </div><!--内容结束-->
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--第五页-->
+    <div class="page thirdpagebg">
+    	<div class="page-hd">
+    		<img src="../img/website/place3.png" class="mg-border img-max thirdpgimg thirdmargintop"/>
+    		<img src="../img/website/place4.png" class="mg-border img-max thirdpgimg thirdmargintop2"/>
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <div class="page thirdpagebg">
+    	<div class="page-hd">
+    		<img src="../img/website/secongpgimg.png" class="mg-border img-max thirdpgimg thirdmargintop"/>
+    		<img src="../img/website/place2.png" class="mg-border img-max thirdpgimg thirdmargintop2"/>
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--第六页-->
+    <div class="page fourthpagepg">
+    	<div class="page-hd">
+  			<img src="../img/website/401.png" class="mg-border img-max fourthimg fourthmargintop"/> 
+  			<img src="../img/website/402.png" class="mg-border img-max fourthimg fourthmargintop"/>
+  			<img src="../img/website/403.png" class="mg-border img-max fourthimg"/> 
+  			<img src="../img/website/404.png" class="mg-border img-max fourthimg"/>
+    	</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--第七页-->
+     <div class="page course">
+        <div class="arrow"></div>
+    </div>
+    <!--第五页-->
+    <!--<div class="page fifthpage">
+    	<div class="page-hd">
+    	<div class="fifthimg1"></div>
+    	<div class="fifthimg2"></div>
+    	<div class="fifthimg3"></div>
+    	<div class="fifthimg4"></div>
+    	<div class="fifthimg5"></div>
+    	</div>
+    	<div class="arrow"></div>
+    </div>-->
+    <!--第六页-->
+    <!--<div class="page sixthpagebg">
+    	<div class="page-bd">
+    		<div class="sixthnull">
+    		</div>
+    		<div class="weui-flex sixpageleft1">
+    			<div class="weui-flex-item sixpageleft1left">
+    				<span class="sixmargintop">
+    					入园过渡班<br />
+    					i Kindergarten<br />
+    					1.5-3岁<br />
+    					五大能力 轻松入园
+    				</span>
+    			</div>
+    				<div class="weui-flex-item sixpageleft1right">
+	    				<div class="sixpageleft1rightcover">
+	    					<span class="sixmargintop">
+	    					入园过渡班<br />
+	    					i Kindergarten<br />
+	    					1.5-3岁<br />
+	    					五大能力 轻松入园
+	    					</span>
+	    				</div>
+    			</div>	
+    		</div>
+    		<div class="weui-flex sixpageleft2">
+    			<div class="weui-flex-item sixpageleft2left">
+    				<div class="sixpageleft2leftcover">
+	    				<span class="sixmargintop">
+	    					入园过渡班<br />
+	    					i Kindergarten<br />
+	    					1.5-3岁<br />
+	    					五大能力 轻松入园
+	    				</span>	
+    				</div>
+    			</div>	
+    			<div class="weui-flex-item sixpageleft2right">
+    				<span class="sixmargintop">
+    					入园过渡班<br />
+    					i Kindergarten<br />
+    					1.5-3岁<br />
+    					五大能力 轻松入园
+    				</span>	
+    			</div>		
+
+    		</div>
+    		<div class="weui-flex sixpageleft3">
+    			<div class="weui-flex-item sixpageleft3left">
+    				<span class="sixmargintop">
+    					入园过渡班<br />
+    					i Kindergarten<br />
+    					1.5-3岁<br />
+    					五大能力 轻松入园
+    				</span>	
+    			</div>	
+    			<div class="weui-flex-item sixpageleft3right">
+    				<div class="weui-flex-item sixpageleft3rightcover">
+	    				<span class="sixmargintop">
+	    					入园过渡班<br />
+	    					i Kindergarten<br />
+	    					1.5-3岁<br />
+	    					五大能力 轻松入园
+	    				</span>	
+    				</div>
+    			</div>		
+    		</div>
+    	</div>	
+    </div>-->
+    <!--第七页-->
+    <div class="page seventhpagebg">
+    	<div class="page-bd">
+    		<form>
+    		<div class="weui-flex seventhtext1">
+           	 	<div class="weui-flex-item seventhtext1top">
+           	 			<div class="weui_cell seventhtext1height">
+               				<div class="weui_cell_bd weui_cell_primary">
+                    			<input class="weui_input" placeholder="宝宝姓名" required="required" id="name"/>
+               				</div>
+           	 			</div>
+           	 	</div>
+        	</div>
+        	<div class="weui-flex seventhtext1">
+           	 	<div class="weui-flex-item">
+           	 			<div class="weui_cell seventhtext1height">
+               				<div class="weui_cell_hd"><label for="" class="weui_label seventhdate" for="birthday">出生日期</label></div>
+                			<div class="weui_cell_bd weui_cell_primary">
+                    		<input class="weui_input" type="date" value="" id="birthday"/>
+              				 </div>
+           	 			</div>
+           	 	</div>
+        	</div>
+        	<div class="weui-flex seventhtext1">
+           	 	<div class="weui-flex-item">
+           	 			<div class="weui_cell seventhtext1height">
+               				<div class="weui_cell_bd weui_cell_primary">
+                    			<input class="weui_input" placeholder="联系方式" required pattern="[0-9]{11}" maxlength="11" id="phone"/>
+               				</div>
+           	 			</div>
+           	 	</div>
+        	</div>
+        	<div class="weui-flex seventhtext1">
+           	 	<div class="weui-flex-item">
+           	 		<input type="button" href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn seventhbtn" value="确认" id="websitebtn"></inpute>
+           	 	</div>
+        	</div>
+        	</form>
+    	</div>
+    </div>
+    <!--第八页-->
+    <div class="page eightpagebg">
+    	<div class="page-hd">
+    		<img src="../img/website/qrcode.png" class="img-border eightimgbox eighthimg"/>
+    	</div>
+    </div>
+</div>
+ <script>
+ var PageSlider =  new PageSlider({
+        pages: $('.page-wrap .page'),
+        animationPlayOnce: false,//翻页动画只执行一次
+        direction: 'v',//水平h  垂直v 修改类 arrow-h
+        /*gestureFollowing: 'true'*/      //可选，如果为 true，则开启手势跟随模式
+        //<div class="page" data-lock-next="true" data-lock-prev="true"></div>data-lock-next： 禁止往后滑 data-lock-prev： 禁止往前滑
+       /* onSwipeUp: function(){//上划回调
+            if(this.index === 0){
+                var page = $(this.pages).eq(0);
+                page.find('.double').show();
+                page.data('lock-next', false);
+            }
+        },
+        onchange: function(){//每一屏切换完成时的回调
+            if(this.prevIndex === 0){
+                var page = $(this.pages).eq(0);
+                page.find('.double').hide();
+                page.data('lock-next', true);
+            }
+        },*/
+    });
+  $('#btn').on('tap', function(){
+        PageSlider.next();
+    });
+    var postdate = {
+			name: '',
+			phone: '',
+			experience: 0,
+			source: 0,
+			birthday: ''
+		};
+		$('#websitebtn').click(function() {
+			postdate.name = $('#name').val();
+			postdate.phone = $('#phone').val();
+			postdate.birthday = $("#birthday").val();
+			if(postdate.name == "") {
+				alert("名字不能为空");
+				return false;
+			} else if(postdate.phone == "") {
+				alert("请填写正确的电话号码");
+				return false;
+			} else if(postdate.birthday == "") {
+				alert("宝宝生日不能为空");
+				return false;
+			} else {
+				$.ajax({
+					type: 'POST',
+					url: 'http://www.lhmkh.com:3000/appointment/insert',
+					data: postdate,
+					success: function(data) {
+						alert('提交成功！');
+						history.go(0);
+					}
+				});
+			}
+		})
+    </script>
+</body>
+</html>
+
